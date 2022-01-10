@@ -8,19 +8,19 @@
 
 | ![Count Mode Screenshot](https://user-images.githubusercontent.com/83375976/148771937-151dceb6-50f2-4603-929f-90997d4f8b73.png)
 |:--:|
-| Display number of events matching the criteria, per type |
+| Display number of events matching the criteria, per type. See https://github.com/BertBril/vaers_db/issues/1 . |
 
 ![Lot Mode Screenshot](https://user-images.githubusercontent.com/83375976/148772142-17273193-d98c-4191-9436-ed9a403c4e40.png)
 |:--:|
-| Display lot count of events matching the criteria, per type |
+| Display lot count of events matching the criteria, per type. See https://github.com/BertBril/vaers_db/issues/2 . |
 
 ![On-click Screenshot](https://user-images.githubusercontent.com/83375976/148772496-566bf413-fb1f-4b4a-a742-de2dea6068e4.png)
 |:--:|
-| Find out name and type of a displayed lot |
+| Find out name and type of a displayed lot. See https://github.com/BertBril/vaers_db/issues/3 . |
 
 ![CSV Export Screenshot](https://user-images.githubusercontent.com/83375976/148773096-7e6a6859-e415-4c52-9e21-b1460a824485.png)
 |:--:|
-| Export results to CSV for spreadsheet use. |
+| Export results to CSV for spreadsheet use. See https://github.com/BertBril/vaers_db/issues/4 . |
 
 
 
