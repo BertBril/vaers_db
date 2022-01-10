@@ -1,0 +1,10 @@
+VAERS_ID,RECVDATE,STATE,AGE_YRS,CAGE_YR,CAGE_MO,SEX,RPT_DATE,SYMPTOM_TEXT,DIED,DATEDIED,L_THREAT,ER_VISIT,HOSPITAL,HOSPDAYS,X_STAY,DISABLE,RECOVD,VAX_DATE,ONSET_DATE,NUMDAYS,LAB_DATA,V_ADMINBY,V_FUNDBY,OTHER_MEDS,CUR_ILL,HISTORY,PRIOR_VAX,SPLTTYPE,FORM_VERS,TODAYS_DATE,BIRTH_DEFECT,OFC_VISIT,ER_ED_VISIT,ALLERGIES
+0810001,02/03/2021,NY,55,55,,F,,Symptom text for 0810001,,,,,,,,,N,12/31/2020,12/31/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810002,03/03/2021,WY,56,55,,M,,Symptom text for 0810002,,,,,,,,,Y,04/01/2021,02/04/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810003,04/03/2021,TX,,57,,F,,Symptom text for 0810003,,,,,,,,,Y,05/01/2021,05/02/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810004,05/03/2021,CA,58,50,,M,,Symptom text for 0810004,,,,,,,,,Y,06/01/2021,06/02/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810010,10/03/2041,AL,63,63,,M,,Symptom text for 0810010,,,,,,,,,Y,11/01/2041,11/02/2041,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810006,07/03/2021,MI,60,55,,F,,Symptom text for 0810006,,,,,,,,,Y,08/01/2021,08/02/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810007,08/03/2021,AL,61,61,,M,,Symptom text for 0810007,,,,,,,,,Y,09/01/2021,09/02/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810008,09/03/2021,OH,62,62,,F,,Symptom text for 0810008,,,,,,,,,Y,10/01/2021,10/02/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
+0810009,10/03/2021,AR,63,63,,M,,Symptom text for 0810009,,,,,,,,,Y,11/01/2021,11/02/2020,0,None,MIL,,Loristan,None,Migraines,,,2,,,,,Allergy
