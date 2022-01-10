@@ -9,3 +9,5 @@ Unpack these zip files. Then, cleanup non-basic ASCII characters from the file, 
 You may also want to get rid of a lot of other bad stuff in there.
 
 Those 4 cleaned up files will be scanned and the results will be put in fast access cache files.
+
+I wanted to add tehse files to the git repository but github refuses to add files larger than 25 MB.
