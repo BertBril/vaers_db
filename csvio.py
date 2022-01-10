@@ -10,7 +10,7 @@ def readVaersCSVFileLines( type, year ):
   from common import dataFile
   from utils import read_file_lines
 
-  return read_file_lines( dataFile(str(year) + '_' + type + '.csv') )
+  return read_file_lines( dataFile(str(year) + 'VAERS' + type + '.csv') )
 
 
 def parseVaersCSVFileLines( lines ):

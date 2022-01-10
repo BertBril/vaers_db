@@ -161,7 +161,7 @@ class VxDB:
     for year in YEARS_HANDLED:
       yearstr = str( year )
       pr_dbg( yearstr + ' ...' )
-      data = getVaersCSVData( 'vx', yearstr )
+      data = getVaersCSVData( 'VAX', yearstr )
       self.addVxFileData( data )
     pr_dbg( 'processing ...' )
     self.handleVxUnknowns()
@@ -172,7 +172,7 @@ class VxDB:
     for year in YEARS_HANDLED:
       yearstr = str( year )
       pr_dbg( yearstr + ' ...' )
-      data = getVaersCSVData( 'data', yearstr )
+      data = getVaersCSVData( 'DATA', yearstr )
       self.addEventFileData( data )
     pr_dbg( 'processing ...' )
     self.createEventFinder()
