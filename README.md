@@ -13,8 +13,7 @@ Included is data for 2020 and 2021, but all data was obtained from:
 
 https://vaers.hhs.gov/data/datasets.html
 
-I am using a cleaned-up versions of the files, renamed them as in:
-2021VAERSDATA.csv -> 2021_data.csv
+I am using a cleaned-up version of the 4 needed files, 202[01]VAERS[DATA,VAX].csv .
 Cleaning up is necessary because the data contains a lot of non-basic ASCII characters, which my Python processing chain doesn't like. Get rid of those, for example using sed, or vim:
 :%s/[^\x00-\x7F]//g
 As an example, for the 2021 data this resulted in '12532 substitutions on 4946 lines'
