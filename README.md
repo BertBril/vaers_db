@@ -2,11 +2,26 @@
 
 ## Graphical tool to check out the C-19 VAERS data
 
-* Automatic data cleanup
-* Ability to filter on age, gender, severity
-* Two modes: Total number of events in time vs Lot-based analysis
+* Data merge and on-the-fly cleanup
+* Ability to select on criteria like age, gender, severity
+* Total number of events in time or Lot-based analysis
 
---> For screen shots see the 'Issues' tab.
+| ![Count Mode Screenshot](https://user-images.githubusercontent.com/83375976/148771937-151dceb6-50f2-4603-929f-90997d4f8b73.png)
+|:--:|
+| Display number of events matching the criteria, per type |
+
+![Lot Mode Screenshot](https://user-images.githubusercontent.com/83375976/148772142-17273193-d98c-4191-9436-ed9a403c4e40.png)
+|:--:|
+| Display lot count of events matching the criteria, per type |
+
+![On-click Screenshot](https://user-images.githubusercontent.com/83375976/148772496-566bf413-fb1f-4b4a-a742-de2dea6068e4.png)
+|:--:|
+| Find out name and type of a displayed lot |
+
+![CSV Export Screenshot](https://user-images.githubusercontent.com/83375976/148773096-7e6a6859-e415-4c52-9e21-b1460a824485.png)
+|:--:|
+| Export results to CSV for spreadsheet use. |
+
 
 
 
