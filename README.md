@@ -5,6 +5,7 @@
 * Automatic data cleanup
 * Ability to filter on age, gender, severity
 * Two modes: Total number of events in time vs Lot-based analysis
+For screen shots see the 'Issues' tab.
 
 
 ### Input Data
