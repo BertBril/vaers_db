@@ -92,9 +92,9 @@ class uiVxCovidDB( qt.MainWindow ):
     return lbl
 
 
-  def addCheckBox( self, txt, xpos, ypos, lyo, cb=None, checked=True ):
+  def addCheckBox( self, txt, xpos, ypos, lyo, callback=None, checked=True ):
 
-    cb = qt.CheckBox( txt, cb )
+    cb = qt.CheckBox( txt, callback )
     cb.setFixedSize( self.selfldwidth, self.selfldheight )
     cb.setChecked( checked )
     lyo.addWidget( cb, ypos, xpos )

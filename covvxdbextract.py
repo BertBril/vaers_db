@@ -96,6 +96,7 @@ class VxCovidDBExtracter():
 
   def getLotCounts( self ):
     from covvxdb import VxCovType_UNK
+    from utils import putInSortedList
 
     starttmnr = self.tmNr( self.daterange[0] )
     endtmnr = self.tmNr( self.daterange[1] ) + 1
@@ -105,21 +106,26 @@ class VxCovidDBExtracter():
       evs = self.db.lotevents[lot]
       if len(evs) < 2:
         continue
-      sumtmnr = count = 0
+
+      tmnrs = []
       covtyp = 0
       for ev in evs:
         [tmnr, isrejected] = self.checkEv( ev, starttmnr, nrtmnrs )
         if not isrejected:
-          sumtmnr += tmnr
-          count += 1
-          if count == 1:
+          putInSortedList( tmnrs, tmnr )
+          if len(tmnrs) == 1:
             covtyp = ev.vxtype
             if covtyp == VxCovType_UNK:
               break
-      if covtyp == VxCovType_UNK or count < 1:
+
+      count = len( tmnrs )
+      if count < 1 or covtyp == VxCovType_UNK:
         continue
 
-      linfo.append( [lot, covtyp, round(sumtmnr/count), count] )
+      tmnrrg = [tmnrs[0], tmnrs[-1]]
+      lottmnr = tmnrrg[0] if count < 2 else tmnrs[1] # protect against one wild low date
+
+      linfo.append( [lot, covtyp, lottmnr, count, tmnrrg )
 
     self.lotinfo = linfo 
 

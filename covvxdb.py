@@ -205,3 +205,7 @@ if __name__ == "__main__":
   covdb = VxCovidDB.get()
   print( "Number of COV events:", len(covdb.events) )
   print( "Number of lots:", len(covdb.lotevents) )
+
+  # import objgraph
+  # objgraph.show_refs( [covdb] )
+  # objgraph.show_backrefs( [covdb] )

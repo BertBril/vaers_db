@@ -157,7 +157,7 @@ class VxDB:
     pr_dbgline( '\nHandling the VAERS .CSV files to create a cache. This will take a lot of time.' )
     pr_dbgline( 'Note that reading next time (from the cache) will be incomparably much faster (a few seconds).' )
 
-    pr_dbg( '\nHandling .CSV files (\'vx\'): ' )
+    pr_dbg( '\nHandling .CSV files (\'VAX\'): ' )
     for year in YEARS_HANDLED:
       yearstr = str( year )
       pr_dbg( yearstr + ' ...' )
@@ -168,7 +168,7 @@ class VxDB:
     self.createBrandFinder()
     pr_dbgline( ' done.' )
 
-    pr_dbg( 'Handling .CSV files (\'data\'): ' )
+    pr_dbg( 'Handling .CSV files (\'DATA\'): ' )
     for year in YEARS_HANDLED:
       yearstr = str( year )
       pr_dbg( yearstr + ' ...' )

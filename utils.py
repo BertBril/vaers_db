@@ -107,6 +107,11 @@ class RefDate:
     return round( self.weeks(date) )
 
 
+def putInSortedList( l, x ):
+  from bisect import insort
+  insort( l, x )
+
+
 class SortedMultiArrBuilder:
 
   def __init__( self ):
