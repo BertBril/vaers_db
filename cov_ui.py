@@ -383,10 +383,15 @@ class uiVxCovidDB( qt.MainWindow ):
     if nearestinf is None:
       return
 
+    def gtDateStr( tmnrs ):
+      def gtDtS( idx ):
+        return self.extracter.dateAt( tmnrs[idx] ).strftime('%b-%-d-%Y')
+      return 'From ' + gtDtS(0) + ' to ' + gtDtS(1)
+
     disptxt = 'Type: ' + VxCovType_prettynames[nearestinf[1]] + ', ' \
             + 'Lot:  ' + nearestinf[0].name()
-    detailedtxt = 'Number of adverse events: ' + str(nearestinf[3]) + '\n' \
-                + 'Average date of injection: ' + self.extracter.dateAt(nearestinf[2]).strftime('%b %-d')
+    detailedtxt = 'Number of adverse events: ' + str(nearestinf[3]) \
+                + '\n' + 'Reported: ' + gtDateStr( nearestinf[4] )
     qt.dispInfo( self.pp.qObj(), disptxt, "Clicked Lot", detailedtxt )
 
 
