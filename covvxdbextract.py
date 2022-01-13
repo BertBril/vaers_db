@@ -125,7 +125,7 @@ class VxCovidDBExtracter():
       tmnrrg = [tmnrs[0], tmnrs[-1]]
       lottmnr = tmnrrg[0] if count < 2 else tmnrs[1] # protect against one wild low date
 
-      linfo.append( [lot, covtyp, lottmnr, count, tmnrrg )
+      linfo.append( [lot, covtyp, lottmnr, count, tmnrrg] )
 
     self.lotinfo = linfo 
 
