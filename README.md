@@ -6,6 +6,13 @@
 * Ability to select on criteria like age, gender, severity
 * Total number of events in time or Lot-based analysis
 
+### Quick use shortcut:
+* Ensure python modules "PyQt.QChart" and "dill" are installed
+* Download vaers_cov_analysis.zip and unpack
+* In the created directory run 'python3 cov_ui.py'
+
+### Screenshots
+
 | ![Count Mode Screenshot](https://user-images.githubusercontent.com/83375976/148771937-151dceb6-50f2-4603-929f-90997d4f8b73.png)
 |:--:|
 | Display number of events matching the criteria, per type. See https://github.com/BertBril/vaers_db/issues/1 . |
@@ -23,7 +30,7 @@
 | Export results to CSV for spreadsheet use. See https://github.com/BertBril/vaers_db/issues/4 . |
 
 
-
+## Full build from source and VAERS data
 
 ### Input Data
 
