@@ -7,7 +7,7 @@
 * Total number of events in time or Lot-based analysis
 
 ### Quick use shortcut:
-* Ensure python modules "PyQt.QChart" and "dill" are installed
+* Ensure python modules "PyQt5.QChart" and "dill" are installed
 * Download vaers_cov_analysis.zip and unpack
 * In the created directory run 'python3 cov_ui.py'
 
