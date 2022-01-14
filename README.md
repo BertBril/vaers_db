@@ -7,8 +7,9 @@
 * Total number of events in time or Lot-based analysis
 
 ### Quick use shortcut:
+... tested on Linux only ...
 * Ensure python modules "PyQt5.QChart" and "dill" are installed
-* Download vaers_cov_analysis.zip and unpack
+* Download _vaers_cov_analysis.zip_ and unpack
 * In the created directory run 'python3 cov_ui.py'
 
 ### Screenshots
@@ -52,14 +53,11 @@ Then, I extract from that all-vaxxes database a COVID-only version, with some be
 
 vxdb.bin -> covvxdb.bin
 
-If one of the .bin files is present, it will use it. Therefore if you download new .csv files, remove all .bin files. The new, updated .bin files are then automatically generated on first use. Note that this conversion costs minutes.
-
-I guess it's a bad idea to accept anyone else's .bin files; pickle and dill both warn that this is dangerous because of the possibility to hack your system.
+Note that this .bin file is the only one actually used by the UI. Anyway - if one of the .bin files is present, it will be used. Therefore if you download new .csv files, remove all .bin files. The new, updated .bin files are then automatically generated on first use. Note that this conversion costs quite some minutes.
 
 For a bit of proper application management:
 
 * In the installation directory, run 'python3 covvxdb.py'. This will generate the .BIN files needed for fast access., and will make sure no writing in the installation directory is required.
-* The python scripts will assume installation at user_home_dir/vaers_db . To change this, set VX_PY_BASE_DIR to the actual directory.
 * The user file selectors will by default go to the user's home directory. A better default can be set using the VX_PY_USER_DATA_DIR variable
 
 
@@ -77,7 +75,7 @@ I'm sure a lot of optimisations can be applied, but unless they significantly im
 
 The app is developed using Python 3.8 . I've minimised dependencies, but still:
 * For creating cache files: 'dill' (an improved variant of 'pickle')
-* For the UI: 'PyQt5' - including PyQtChart.
+* For the UI: 'PyQt5' - in particular the PyQt5.QtChart module (which I think will trigger the rest of the required modules. Otherwise, also make sure about PyQt5.QtGui).
 Both are available from the Ubuntu package manager (python3-dill and python3-pyqt5.qtchart)
 
 To start, just run:
