@@ -8,7 +8,7 @@
 
 ### Quick use shortcut:
 ... tested on Linux only ...
-* Ensure python modules "PyQt5.QChart" and "dill" are installed
+* Ensure python modules "PyQt5.QChart" and "dill" are installed (e.g. on Ubuntu, packages python3-pyqt5-qtcharts and python3-dill).
 * Download _vaers_cov_analysis.zip_ and unpack
 * In the created directory run 'python3 cov_ui.py'
 
