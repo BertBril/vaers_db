@@ -1,0 +1,24 @@
+#!/bin/bash
+
+build_dir_base=.
+app_name=vaers_cov_analysis
+
+#----
+
+build_dir=$build_dir_base/$app_name
+rel_zipfile=$app_name.zip
+
+if [ -e $build_dir ]; then
+    rm -rf $build_dir
+fi
+
+mkdir $build_dir
+cp *.py $build_dir
+mkdir $build_dir/data
+cp data/covvxdb.bin $build_dir/data
+
+
+cd $build_dir_base
+zip -r $rel_zipfile ./$app_name
+
+echo "Created $rel_zipfile."
