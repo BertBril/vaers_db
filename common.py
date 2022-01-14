@@ -16,9 +16,8 @@ def baseDir():
   from os import getenv, path
   val = getenv('VX_PY_BASE_DIR')
   if not val:
-    val = getenv('VX_BASE_DIR')
-    if not val:
-      val = path.join( homeDir(), 'vaers_db' )
+    import sys
+    return path.dirname( path.realpath(sys.argv[0]) )
   return val
 
 
